@@ -8,5 +8,3 @@ class TaskAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'status', 'due_date')
     list_filter = ('status', 'due_date')
 
-
-
