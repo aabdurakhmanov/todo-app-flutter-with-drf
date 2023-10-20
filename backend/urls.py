@@ -1,7 +1,8 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('tasks/', views.TaskList.as_view(), name='task-list'),
-    path('tasks/<int:pk>/', views.TaskDetail.as_view(), name='task-detail'),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('', views.TaskList.as_view(), name='task-list'),
+    path('<int:pk>/', views.TaskDetail.as_view(), name='task-detail'),
 ]
