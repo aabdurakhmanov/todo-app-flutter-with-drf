@@ -89,7 +89,7 @@ You can enable user authentication for your app using DRF's built-in authenticat
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [Apache-2.0 license](LICENSE).
 
 ## Contact
 
